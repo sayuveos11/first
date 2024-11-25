@@ -1,0 +1,19 @@
+.class1 {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.class2 {
+    color: darkgreen;
+    font-family: 'Times New Roman', serif;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.class3 {
+    color: darkred;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px gray;
+}

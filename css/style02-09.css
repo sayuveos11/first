@@ -1,0 +1,21 @@
+.section-title {
+    color: navy;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-text {
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footnote {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
