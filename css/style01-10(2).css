@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* Заповнення вертикального простору */
+}
+
+.header,
+.footer {
+    flex: 0 0 80px;
+    /* Фіксована висота */
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 80px;
+}
+
+.footer {
+    background-color: #ff9800;
+}
+
+.main {
+    flex: 1;
+    /* Заповнення залишкового простору */
+    display: flex;
+}
+
+.sidebar {
+    background-color: #2196f3;
+    flex: 0 0 25%;
+    /* Фіксована ширина */
+    min-height: calc(100vh - 166px);
+    /* Висота мінус header і footer */
+    text-align: center;
+    color: white;
+    line-height: 2;
+}
+
+.content {
+    background-color: #f44336;
+    flex: 1;
+    /* Займає залишковий простір */
+    text-align: center;
+    color: white;
+    line-height: 2;
+}
+
+/* Відступи між блоками */
+.block {
+    border: 1px solid #ccc;
+    margin: 3px;
+}
+
+/* Адаптивність через @media */
+@media (max-width: 499px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .content {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+    .sidebar {
+        flex: 0 0 50%;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 949px) {
+    .sidebar {
+        flex: 0 0 35%;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1199px) {
+    .sidebar {
+        flex: 0 0 30%;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar {
+        flex: 0 0 25%;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
